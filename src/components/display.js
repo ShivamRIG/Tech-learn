@@ -5,11 +5,12 @@ import Parallaximg from './parallaximg'
 const background="https://images.hdqwalls.com/download/i-love-coding-xl-1920x1080.jpg";
 export default function Display() {
     const size = useWindowSize();
+
     return (
         <>
         <div className="display" id="img">
         <ParallaxProvider >
-        <Parallaximg imgsrc={background} height={size.height} width={size.width} opacity=".5" ></Parallaximg>
+        <Parallaximg imgsrc={background} height={size.height} width={(size.width)} opacity=".5" ></Parallaximg>
         </ParallaxProvider>
         </div>
         </>
